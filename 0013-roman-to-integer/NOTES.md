@@ -1,1 +1,8 @@
-​
+- 스트링 → 배열
+- 배열 순회
+- key값이 문자이고, value 가 숫자인 obejct, obj 생성
+- arr[current], arr[current+1] 확인 
+  - 합성 문자 조건 이면, obj[arr[current]] + obj[arr[current+1]] 값을 answer 에 더하고, arr[current+1] 에 "aleady merged" 라는 값을 넣어 check
+    - 여기서 arr 을 check property 를 가지는 객체 배열로 만들어야 하나 했는 데 값 자체를 바꾸는 방식으로 생각해냄
+  - 합성 문자 조건 아니면, obj[arr[current]] 을 바로 더함
+- current+1 의 index 를 봐야 하기 때문에 배열 순회 조건을 arr[arr.length -1] 까지만
